@@ -16,6 +16,11 @@ spring:
     username: root
     password: 123456
 
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.springcloud.entity
+  mapper-locations:
+  - classpath:mybatis/mapper/*.xml
 
  
 eureka: 

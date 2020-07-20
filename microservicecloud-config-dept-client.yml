@@ -12,19 +12,11 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB01
+    url: jdbc:mysql://127.0.0.1:3306/cloudDB01
     username: root
     password: 123456
-    dbcp2:
-      min-idle: 5
-      initial-size: 5
-      max-total: 5
-      max-wait-millis: 200 
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
-  mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml
+
+
  
 eureka: 
   client: #客户端注册进eureka服务列表内
@@ -35,8 +27,8 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: atguigu-microservicecloud-springcloudconfig01
-  company.name: www.atguigu.com
+  app.name: huida-microservicecloud-springcloudconfig01
+  company.name: www.huida.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -49,21 +41,10 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB02
+    url: jdbc:mysql://127.0.0.1:3306/cloudDB02
     username: root
     password: 123456
-    dbcp2:
-      min-idle: 5
-      initial-size: 5
-      max-total: 5
-      max-wait-millis: 200  
-  
-  
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
-  mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml
+ 
  
 eureka: 
   client: #客户端注册进eureka服务列表内
@@ -74,7 +55,7 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: atguigu-microservicecloud-springcloudconfig02
-  company.name: www.atguigu.com
+  app.name: huida-microservicecloud-springcloudconfig02
+  company.name: www.huida.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
